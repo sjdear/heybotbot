@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <title>Hey BotBot</title>
+  </head>
+  <body>
+    <section class="game">
+      <div class="intro">
+        <h1>Wanna chat?</h1>
+        <button>I guess</button>
+      </div>
+
+    <section class="chat">
+        <div class="match fadeOut">
+            <div id="app"></div>
+            <div class="title">hey bot bot</div>
+            <div class="content">
+                <div class="full-chat-block">
+                    <!-- Message Container -->
+                    <div class="outer-container">
+                        <div class="chat-container">
+                            <!-- Messages -->
+                            <div id="chatbox">
+                                <h5 id="chat-timestamp"></h5>
+                                <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                            </div>
+      
+                            <!-- User input box -->
+                            <div class="chat-bar-input-block">
+                                <div id="userInput">
+                                    <input id="textInput" class="input-box" type="text" name="msg"
+                                        placeholder="Tap 'Enter' to send a message">
+                                    <p></p>
+                                </div>
+      
+                                <div class="chat-bar-icons">
+                                    <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                        onclick="heartButton()"></i>
+                                    <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                        onclick="sendButton()"></i>
+                                </div>
+                            </div>
+      
+                            <div id="chat-bar-bottom">
+                                <p></p>
+                            </div>
+      
+                        </div>
+                    </div>
+      
+                </div>
+            </div>
+                    <img><svg width="156" height="113" viewBox="0 0 312 226" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="36" width="240" height="216" rx="13" fill="#FFA67A"/>
+                        <path d="M48 4L264 4C268.418 4 272 7.58172 272 12L272 214C272 218.418 268.418 222 264 222H48C43.5817 222 40 218.418 40 214V12C40 7.58173 43.5817 4 48 4Z" fill="url(#paint0_linear_0:1)" stroke="black" stroke-width="8"/>
+                        <path d="M128.8 150.55C129.92 150.55 130.877 150.363 131.67 149.99C132.463 149.57 133.117 149.057 133.63 148.45C134.19 147.797 134.587 147.073 134.82 146.28C135.1 145.44 135.24 144.6 135.24 143.76V131.16C135.24 129.247 135.45 127.543 135.87 126.05C136.29 124.557 137.013 123.32 138.04 122.34C139.067 121.313 140.42 120.543 142.1 120.03C143.827 119.47 145.95 119.19 148.47 119.19H148.75V124.3C146.09 124.3 144.177 124.79 143.01 125.77C141.89 126.703 141.33 128.523 141.33 131.23V142.01C141.33 145.09 140.91 147.47 140.07 149.15C139.277 150.83 138.133 152.137 136.64 153.07C138.133 154.003 139.277 155.31 140.07 156.99C140.91 158.67 141.33 161.05 141.33 164.13V174.91C141.33 177.617 141.89 179.437 143.01 180.37C144.177 181.35 146.09 181.84 148.75 181.84V186.95H148.47C145.95 186.95 143.827 186.693 142.1 186.18C140.42 185.667 139.067 184.897 138.04 183.87C137.013 182.843 136.29 181.583 135.87 180.09C135.45 178.597 135.24 176.893 135.24 174.98V162.38C135.24 161.54 135.1 160.723 134.82 159.93C134.587 159.09 134.19 158.367 133.63 157.76C133.117 157.107 132.463 156.593 131.67 156.22C130.877 155.8 129.92 155.59 128.8 155.59V150.55Z" fill="black"/>
+                        <path d="M98.3906 110.742C98.3906 119.206 96.9453 125.495 94.0547 129.609C91.1641 133.724 86.6458 135.781 80.5 135.781C74.4323 135.781 69.9401 133.776 67.0234 129.766C64.1068 125.729 62.5964 119.714 62.4922 111.719V102.07C62.4922 93.7109 63.9375 87.5 66.8281 83.4375C69.7188 79.375 74.25 77.3438 80.4219 77.3438C86.5417 77.3438 91.0469 79.3099 93.9375 83.2422C96.8281 87.1484 98.3125 93.1901 98.3906 101.367V110.742ZM91.1641 100.859C91.1641 94.7396 90.3047 90.2865 88.5859 87.5C86.8672 84.6875 84.1458 83.2812 80.4219 83.2812C76.724 83.2812 74.0286 84.6745 72.3359 87.4609C70.6432 90.2474 69.7708 94.5312 69.7188 100.312V111.875C69.7188 118.021 70.6042 122.565 72.375 125.508C74.1719 128.424 76.8802 129.883 80.5 129.883C84.0677 129.883 86.7109 128.503 88.4297 125.742C90.1745 122.982 91.0859 118.633 91.1641 112.695V100.859Z" fill="black"/>
+                        <path d="M214.391 110.742C214.391 119.206 212.945 125.495 210.055 129.609C207.164 133.724 202.646 135.781 196.5 135.781C190.432 135.781 185.94 133.776 183.023 129.766C180.107 125.729 178.596 119.714 178.492 111.719V102.07C178.492 93.7109 179.938 87.5 182.828 83.4375C185.719 79.375 190.25 77.3438 196.422 77.3438C202.542 77.3438 207.047 79.3099 209.938 83.2422C212.828 87.1484 214.312 93.1901 214.391 101.367V110.742ZM207.164 100.859C207.164 94.7396 206.305 90.2865 204.586 87.5C202.867 84.6875 200.146 83.2812 196.422 83.2812C192.724 83.2812 190.029 84.6745 188.336 87.4609C186.643 90.2474 185.771 94.5312 185.719 100.312V111.875C185.719 118.021 186.604 122.565 188.375 125.508C190.172 128.424 192.88 129.883 196.5 129.883C200.068 129.883 202.711 128.503 204.43 125.742C206.174 122.982 207.086 118.633 207.164 112.695V100.859Z" fill="black"/>
+                        <rect x="306.659" y="79.2357" width="6" height="60" transform="rotate(37 306.659 79.2357)" fill="black"/>
+                        <rect x="36.1089" y="131" width="6" height="60" transform="rotate(37 36.1089 131)" fill="black"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_0:1" x1="284.154" y1="-40.9433" x2="371.36" y2="175.459" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#6BFFBD"/>
+                        <stop offset="0.901042" stop-color="#FFA297" stop-opacity="0.463542"/>
+                        <stop offset="0.9999" stop-color="#CECDB1" stop-opacity="0.713542"/>
+                        <stop offset="1" stop-color="#FFA398" stop-opacity="0"/>
+                        <stop offset="1" stop-color="#FFA398" stop-opacity="0"/>
+                        </linearGradient>
+                        </defs>
+                        </svg>
+                    </img>
+        </div>
+    </section>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="responses.js"></script>
+    <script src="script.js"></script>
+</html>

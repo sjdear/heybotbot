@@ -1,0 +1,46 @@
+
+
+body { 
+    color: #e5f0fc; 
+    font-weight: bold; 
+    font-size: 18px; 
+    font-family: "Courier New"; 
+    background: #FFFFFF; 
+
+}
+
+
+input {
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    padding-bottom: 30px;
+    margin-bottom: 30px !important;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: -25vw;
+    font-size: 18px; 
+    font-family: "Helvetica";
+}
+
+
+
+
+
+
+  img{
+    padding: 20px;
+    margin-top: 20vh;
+    margin-left: 70vw;
+    position: fixed;
+  }
+
+  div.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  div.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+  }
